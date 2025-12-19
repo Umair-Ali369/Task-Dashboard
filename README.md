@@ -1,16 +1,82 @@
-# React + Vite
+## 📊 Project Summary (Dashboard with Graph-Based Insights)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Tasks Dashboard** is designed to visually represent task data using **dashboard-style analytics**, making it easy to understand task progress at a glance.
 
-Currently, two official plugins are available:
+Instead of only listing tasks, the application summarizes task information using **graph-based insights**, similar to real productivity and admin dashboards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📈 Data Visualization Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The dashboard conceptually uses **three types of graphs** to represent task data:
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🥧 Pie Chart – Task Status Distribution
+
+The **Pie Chart** represents the overall distribution of tasks based on their current status:
+
+- Completed Tasks
+- Pending Tasks
+- In Progress Tasks
+
+**Purpose:**
+- Gives a quick overview of how tasks are distributed
+- Helps users instantly understand workload completion
+- Useful for performance and productivity tracking
+
+**Logic Behind It:**
+- Total tasks are divided by status
+- Each slice represents a task category percentage
+
+---
+
+### 📊 Bar Chart – Task Count Comparison
+
+The **Bar Chart** compares the number of tasks across different statuses:
+
+- Completed
+- Pending
+- In Progress
+
+**Purpose:**
+- Makes it easy to compare task counts visually
+- Highlights which task category has the highest workload
+- Useful for planning and prioritization
+
+**Logic Behind It:**
+- Each bar represents a task status
+- Height of bar corresponds to number of tasks
+
+---
+
+### 📉 Line Chart – Task Progress Over Time
+
+The **Line Chart** represents task progress trends over time:
+
+- Tasks added
+- Tasks completed
+- Tasks updated
+
+**Purpose:**
+- Shows productivity trends
+- Helps understand progress patterns
+- Useful for long-term task tracking
+
+**Logic Behind It:**
+- X-axis represents time
+- Y-axis represents task count
+- Line changes based on task activity
+
+---
+
+## 🧠 Dashboard Insight Value
+
+By combining **task lists** with **graph-based summaries**, the dashboard provides:
+
+- Clear task visibility
+- Faster decision-making
+- Better productivity monitoring
+- Real-world admin dashboard experience
+
+This approach mirrors professional project management tools where **data is not only stored but also visualized** for better understanding.
