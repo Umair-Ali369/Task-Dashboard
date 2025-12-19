@@ -4,6 +4,8 @@ The **Tasks Dashboard** is designed to visually represent task data using **dash
 
 Instead of only listing tasks, the application summarizes task information using **graph-based insights**, similar to real productivity and admin dashboards.
 
+A modern **Tasks Management Dashboard** built with **React**, designed to manage tasks efficiently with full CRUD functionality, API integration, and task status tracking.
+
 ---
 
 ## 📈 Data Visualization Overview
